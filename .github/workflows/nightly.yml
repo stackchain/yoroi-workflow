@@ -19,10 +19,12 @@ jobs:
 
       - uses: maierj/fastlane-action@v3.0.0
         with:
+            subdirectory: 'apps/wallet-mobile'
             lane: 'bump_build_android'
 
       - uses: maierj/fastlane-action@v3.0.0
         with:
+            subdirectory: 'apps/wallet-mobile'
             lane: 'bump_build_ios'
     
       - name: Install Octopus CLI
