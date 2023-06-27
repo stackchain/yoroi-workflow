@@ -14,6 +14,7 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
+            working-directory: 'apps/wallet-mobile'
             ruby-version: '2.7.6'
             bundler-cache: true
 
